@@ -115,3 +115,31 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# sudo apachectl stop;
+
+
+# Define config path of starship
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+export STARSHIP_CACHE=$HOME/.config/starship/cache
+
+# starship
+if [ -x ~/starship ]; then
+    eval "$(~/starship init bash)"
+elif command -v starship &> /dev/null; then
+    eval "$(starship init bash)"
+fi
+
+source /etc/environment
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export GDK_SCALE=1 #GWSL
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval $(thefuck --alias)
+
+export DISPLAY=$(ip route show | grep -i default | awk '{ print $3}'):0.0 #GWSL
+export PULSE_SERVER=tcp:$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
+export LIBGL_ALWAYS_INDIRECT=1 #GWSL

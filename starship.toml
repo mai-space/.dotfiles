@@ -1,0 +1,192 @@
+[character]
+success_symbol = '[>](bold green)'
+error_symbol = '[x](bold red)'
+vimcmd_symbol = '[<](bold green)'
+
+[git_commit]
+tag_symbol = ' tag '
+
+[git_status]
+ahead = '>'
+behind = '<'
+diverged = '<>'
+renamed = 'r'
+deleted = 'x'
+style = 'purple'
+
+[directory]
+read_only = ' ro'
+style = 'yellow bold'
+
+[docker_context]
+symbol = 'docker '
+disabled = false
+
+[git_branch]
+style = 'bold blue'
+
+[status]
+symbol = '[x](bold red) '
+
+[sudo]
+symbol = 'sudo '
+
+# Shell section
+[shell]
+bash_indicator = 'bash'
+zsh_indicator = 'zsh'
+unknown_indicator = '$'
+style = 'bold purple'
+disabled = false
+
+[username]
+style_user = 'green bold'
+style_root = 'red bold'
+format = '[$user]($style) at '
+show_always = true
+disabled = false
+
+[hostname]
+ssh_only = false
+ssh_symbol = 'ssh on '
+style = 'bold dimmed purple'
+format = '[$ssh_symbol](bold blue)[$hostname](bold red) in '
+disabled = false
+
+[php]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
+[swift]
+disabled = true
+
+[terraform]
+disabled = true
+
+[zig]
+disabled = true
+
+[golang]
+disabled = true
+
+[gradle]
+disabled = true
+
+[guix_shell]
+disabled = true
+
+[hg_branch]
+disabled = true
+
+[java]
+disabled = true
+
+[julia]
+disabled = true
+
+[kotlin]
+disabled = true
+
+[lua]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[meson]
+disabled = true
+
+[nim]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[opa]
+disabled = true
+
+[os]
+disabled = true
+
+[perl]
+disabled = true
+
+[pijul_channel]
+disabled = true
+
+[pulumi]
+disabled = true
+
+[purescript]
+disabled = true
+
+[python]
+disabled = true
+
+[raku]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[scala]
+disabled = true
+
+[spack]
+disabled = true
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[fennel]
+disabled = true
+
+[fossil_branch]
+disabled = true
+
+[aws]
+disabled = true
+
+[bun]
+disabled = true
+
+[c]
+disabled = true
+
+[cobol]
+disabled = true
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[cmake]
+disabled = true
+
+[daml]
+disabled = true
+
+[dart]
+disabled = true
+
+[deno]
+disabled = true
+
+[dotnet]
+disabled = true
